@@ -87,7 +87,3 @@ typings/
 
 # Electron-Forge
 out/
-
-# Other Firebase files
-.firebaserc
-src/index.html
