@@ -9,9 +9,9 @@ The process of this application is as follows:
 2. The user is presented with a form to post a blog entry, where the user can choose a title, date, and message for the blog post.
 3. The message is split by lines, and each 'paragraph' is put in a separate \<description\> tag.
 4. On clicking the 'Post' button, a *.xml* file is created, and the date chosen for the blog post is used as the filename \(i.e. \<filename\>.xml\). Note, the implications are as follows:
-    * As the application uses Firebase, the date becomes the filename for the data sent to Firebase Storage. Thus, as the file is uniquely identified by the date, if a file is uploaded to Firebase Storage with the same date as another file, the new file will overwrite the preexisting file in Firebase Storage.
-    * This means there can only be one blog post per date.
-    * This also means that, if a user intends to 'edit' a blog post, this can be imitated by copying the information from the previous blog post and putting it in a new blog post, to overwrite the old one.
+    1. As the application uses Firebase, the date becomes the filename for the data sent to Firebase Storage. Thus, as the file is uniquely identified by the date, if a file is uploaded to Firebase Storage with the same date as another file, the new file will overwrite the preexisting file in Firebase Storage.
+    2. This means there can only be one blog post per date.
+    3. This also means that, if a user intends to 'edit' a blog post, this can be imitated by copying the information from the previous blog post and putting it in a new blog post, to overwrite the old one.
 5. The file is uploaded to Firebase Storage.
 
 Note: The file that is created may not be a pure RSS file. Simply put, it creates a format as follows:
