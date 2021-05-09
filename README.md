@@ -59,3 +59,6 @@ The next step is to run the application:
 npm start
 ```
 This should run the application.
+
+## Note
+Please change post-uploader/storage.rules as needed to secure Firebase Storage.
