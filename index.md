@@ -25,7 +25,7 @@ This electron-forge application is designed to make text-based blog posts to a F
 
 Every paragraph in the large message box is split by lines, and is put in a separate \<description\> tag. The principle is to put a script in your blog page that takes all these description tags, and puts them into \<p\> tags, or one large \<p\> tag with \<br\> tags as separators.
 
-## Note
+## Note: Deprecation
 
 The purpose of this project was to try to securely publish posts to my blog with ease. The idea was that, by being a desktop application, the application could remain locally stored, so the public could not edit my posts. However, I realized that this was not a secure approach when I learned that Firebase considers certain project credentials of Firebase Storage as public (in the 'Inspect Element' menu, the init.js file that is loaded contains project credentials). Thus, anyone can see these credentials so everyone has access to Firebase Storage if rules permit all to write, hence Firebase Storage must be secured by using Storage Rules.
 
